@@ -1,0 +1,63 @@
+/inch {72 mul} def
+/lm 1 inch def
+/rm 7.5 inch def
+/ypos 10 inch def
+/lineheight 30 def
+/newline
+{ypos lineheight sub
+/ypos exch def
+lm ypos moveto} def
+/prtstr
+  {dup stringwidth pop
+   currentpoint pop
+   add rm gt
+   {newline} if
+show} def
+
+/myname {
+/Zapf-Chancery-MediumItalic findfont 27 scalefont setfont
+lm ypos moveto
+(Brent Stewart ) prtstr (Brent Stewart ) prtstr (Brent Stewart ) prtstr (Brent Stewart ) prtstr 
+(Brent Stewart ) prtstr (Brent Stewart ) prtstr (Brent Stewart ) prtstr (Brent Stewart ) prtstr
+(Brent Stewart ) prtstr (Brent Stewart ) prtstr (Brent Stewart ) prtstr (Brent Stewart ) prtstr
+(Brent Stewart ) prtstr (Brent Stewart ) prtstr (Brent Stewart ) prtstr (Brent Stewart ) prtstr
+(Brent Stewart ) prtstr (Brent Stewart ) prtstr (Brent Stewart ) prtstr (Brent Stewart ) prtstr
+(Brent Stewart ) prtstr (Brent Stewart ) prtstr (Brent Stewart ) prtstr (Brent Stewart ) prtstr
+(Brent Stewart ) prtstr (Brent Stewart ) prtstr (Brent Stewart ) prtstr (Brent Stewart ) prtstr
+(Brent Stewart ) prtstr (Brent Stewart ) prtstr (Brent Stewart ) prtstr (Brent Stewart ) prtstr
+(Brent Stewart ) prtstr (Brent Stewart ) prtstr (Brent Stewart ) prtstr (Brent Stewart ) prtstr
+(Brent Stewart ) prtstr (Brent Stewart ) prtstr (Brent Stewart ) prtstr (Brent Stewart ) prtstr
+(Brent Stewart ) prtstr (Brent Stewart ) prtstr (Brent Stewart ) prtstr (Brent Stewart ) prtstr
+(Brent Stewart ) prtstr (Brent Stewart ) prtstr (Brent Stewart ) prtstr (Brent Stewart ) prtstr
+(Brent Stewart ) prtstr (Brent Stewart ) prtstr (Brent Stewart ) prtstr (Brent Stewart ) prtstr
+(Brent Stewart ) prtstr (Brent Stewart ) prtstr (Brent Stewart ) prtstr (Brent Stewart ) prtstr
+(Brent Stewart ) prtstr (Brent Stewart ) prtstr (Brent Stewart ) prtstr (Brent Stewart ) prtstr
+(Brent Stewart ) prtstr (Brent Stewart ) prtstr (Brent Stewart ) prtstr (Brent Stewart ) prtstr
+(Brent Stewart ) prtstr (Brent Stewart ) prtstr (Brent Stewart ) prtstr (Brent Stewart ) prtstr
+(Brent Stewart ) prtstr (Brent Stewart ) prtstr (Brent Stewart ) prtstr (Brent Stewart ) prtstr
+(Brent Stewart ) prtstr (Brent Stewart ) prtstr (Brent Stewart ) prtstr (Brent Stewart ) prtstr
+(Brent Stewart ) prtstr (Brent Stewart ) prtstr (Brent Stewart ) prtstr (Brent Stewart ) prtstr
+(Brent Stewart ) prtstr (Brent Stewart ) prtstr (Brent Stewart ) prtstr (Brent Stewart ) prtstr
+(Brent Stewart ) prtstr (Brent Stewart ) prtstr (Brent Stewart ) prtstr (Brent Stewart ) prtstr
+(Brent Stewart ) prtstr (Brent Stewart ) prtstr (Brent Stewart ) prtstr (Brent Stewart ) prtstr
+(Brent Stewart ) prtstr (Brent Stewart ) prtstr (Brent Stewart ) prtstr (Brent Stewart ) prtstr
+(Brent Stewart ) prtstr (Brent Stewart ) prtstr (Brent Stewart ) prtstr (Brent Stewart ) prtstr
+(Brent Stewart ) prtstr (Brent Stewart ) prtstr (Brent Stewart ) prtstr (Brent Stewart ) prtstr
+(Brent Stewart ) prtstr (Brent Stewart ) prtstr (Brent Stewart ) prtstr (Brent Stewart ) prtstr
+(Brent Stewart ) prtstr (Brent Stewart ) prtstr (Brent Stewart ) prtstr (Brent Stewart ) prtstr
+(Brent Stewart ) prtstr (Brent Stewart ) prtstr (Brent Stewart ) prtstr (Brent Stewart ) prtstr
+(Brent Stewart ) prtstr (Brent Stewart ) prtstr (Brent Stewart ) prtstr (Brent Stewart ) prtstr
+(Brent Stewart ) prtstr (Brent Stewart ) prtstr (Brent Stewart ) prtstr (Brent Stewart ) prtstr
+(Brent Stewart ) prtstr (Brent Stewart ) prtstr (Brent Stewart ) prtstr (Brent Stewart ) prtstr
+
+} def
+
+newpath
+/Times findfont 400 scalefont setfont
+0 0 moveto
+(BDS) true
+charpath clip
+
+newpath
+myname
+showpage

@@ -1,0 +1,28 @@
+/Helvetica-Bold findfont
+  30 scalefont setfont
+
+
+/oshow  %stack: {string}
+{true charpath stroke} def
+
+/circleofBrent
+ { 20 20 340
+   { gsave
+     rotate 0 0 moveto
+     (Brent) oshow
+     grestore
+     } for
+     } def
+
+     % --Begin Program --
+     250 400 translate
+
+     .5 setlinewidth
+     circleofBrent
+
+     0 0 moveto
+     (Brent Stewart) true charpath
+     gsave 1 setgray fill grestore
+     stroke
+
+     showpage

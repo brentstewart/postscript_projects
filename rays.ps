@@ -1,0 +1,24 @@
+/Times findfont 240 scalefont setfont
+
+/rays
+{ 0 1.5 179
+	{gsave
+	rotate
+	0 0 moveto 400 0 lineto
+	stroke
+	grestore
+	} for
+} def
+
+72 396 translate
+.25 setlinewidth
+
+newpath
+0 0 moveto
+(BDS) true
+charpath clip
+newpath
+98 0 translate
+rays
+
+showpage
